@@ -1,6 +1,6 @@
 package tests;
 
-import Locators.CalculatorUserInterface;
+import Locators.CalculatorInterFace;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -17,7 +17,7 @@ public class CalculatorTest {
 
 
     AndroidDriver<AndroidElement> driver;
-    CalculatorUserInterface calculatorApp;
+    CalculatorInterFace calculatorApp;
 
 
     @BeforeClass
@@ -29,7 +29,7 @@ public class CalculatorTest {
         desiredCapabilities.setCapability("automationName",ConfigReader.getProperty("automationName"));
         desiredCapabilities.setCapability("app",ConfigReader.getProperty("app"));
         driver= new AndroidDriver<AndroidElement>(new URL("http://localhost:4723/wd/hub"),desiredCapabilities);
-        calculatorApp=new CalculatorUserInterface(driver);
+        calculatorApp=new CalculatorInterFace(driver);
     }
 
     @Test(priority = 1)
