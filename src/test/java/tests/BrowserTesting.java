@@ -24,8 +24,8 @@ public class BrowserTesting {
         caps.setCapability("platformVersion", "6.0");
         caps.setCapability("deviceName", "realDevice");
         caps.setCapability("browserName", "chrome");
-        caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT,"60000");
-        caps.setCapability("chromedriverExecutable", "C:\\Users\\hakan\\Desktop\\MobileTestingWithAppiumAndTestNG-main\\src\\test\\java\\Driver\\chromedriver.exe");
+        caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT,"70000");
+        caps.setCapability("chromedriverExecutable", "C:\\Users\\hakan\\Desktop\\com.appiumAppTest\\src\\test\\java\\Driver\\chromedriver.exe");
 
         AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new URL("http://localhost:4723/wd/hub"), caps);
 
